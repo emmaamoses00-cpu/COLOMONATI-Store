@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>COLOMONATI Store | Shop. Connect. Grow.</title>
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="nav-container">
+
+            <a href="#" class="logo">
+                COLOMONATI<span>.</span>
+            </a>
+
+            <nav class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#products">Products</a>
+                <a href="#categories">Categories</a>
+                <a href="#about">About</a>
+            </nav>
+
+            <div class="nav-actions">
+
+                <button class="cart-button" id="cartButton">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span>Cart</span>
+                    <b id="cartCount">0</b>
+                </button>
+
+                <button class="menu-button" id="menuButton">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+            </div>
+
+        </div>
+    </header>
+
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#categories">Categories</a>
+        <a href="#about">About</a>
+    </div>
+
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <span class="hero-label">
+                COLOMONATI ONLINE STORE
+            </span>
+
+            <h1>
+                Shop Smart.<br>
+                <span>Live Better.</span>
+            </h1>
+
+            <p>
+                Discover quality products at great prices,
+                all in one simple shopping experience.
+            </p>
+
+            <a href="#products" class="hero-button">
+                Shop Now
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+        <div class="hero-visual">
+            <div class="hero-circle"></div>
+
+            <div class="hero-card">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <h3>Smart Shopping</h3>
+                <p>Simple. Fast. Reliable.</p>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- FEATURES -->
+    <section class="features">
+
+        <div class="feature">
+            <i class="fa-solid fa-truck-fast"></i>
+            <div>
+                <h3>Fast Delivery</h3>
+                <p>Quick and convenient</p>
+            </div>
+        </div>
+
+        <div class="feature">
+            <i class="fa-solid fa-shield-halved"></i>
+            <div>
+                <h3>Secure Shopping</h3>
+                <p>Shop with confidence</p>
+            </div>
+        </div>
+
+        <div class="feature">
+            <i class="fa-solid fa-tags"></i>
+            <div>
+                <h3>Great Prices</h3>
+                <p>Quality without the excess</p>
+            </div>
+        </div>
+
+        <div class="feature">
+            <i class="fa-solid fa-headset"></i>
+            <div>
+                <h3>Customer Support</h3>
+                <p>We're here to help</p>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- PRODUCTS -->
+    <section class="products-section" id="products">
+
+        <div class="section-heading">
+
+            <div>
+                <span>OUR PRODUCTS</span>
+                <h2>Find Something You Love</h2>
+            </div>
+
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search products..."
+                >
+            </div>
+
+        </div>
+
+
+        <!-- CATEGORIES -->
+        <div class="categories" id="categories">
+
+            <button class="category active" data-category="all">
+                All
+            </button>
+
+            <button class="category" data-category="electronics">
+                Electronics
+            </button>
+
+            <button class="category" data-category="fashion">
+                Fashion
+            </button>
+
+            <button class="category" data-category="beauty">
+                Beauty
+            </button>
+
+            <button class="category" data-category="home">
+                Home
+            </button>
+
+        </div>
+
+
+        <!-- PRODUCT GRID -->
+        <div class="product-grid" id="productGrid">
+        </div>
+
+        <p class="no-products" id="noProducts">
+            No products found.
+        </p>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+
+        <div class="about-content">
+
+            <span>ABOUT COLOMONATI</span>
+
+            <h2>
+                More Than A Store.
+                <strong>A Growing Community.</strong>
+            </h2>
+
+            <p>
+                COLOMONATI is built around a simple idea:
+                making online shopping easier while creating
+                opportunities for businesses, marketers,
+                traders and customers to connect.
+            </p>
+
+            <div class="about-stats">
+
+                <div>
+                    <strong>100+</strong>
+                    <span>Products</span>
+                </div>
+
+                <div>
+                    <strong>24/7</strong>
+                    <span>Shopping</span>
+                </div>
+
+                <div>
+                    <strong>1</strong>
+                    <span>Community</span>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="about-card">
+
+            <i class="fa-solid fa-store"></i>
+
+            <h3>
+                Shop. Connect. Grow.
+            </h3>
+
+            <p>
+                Everything you need,
+                in one place.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- CART SIDEBAR -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <aside class="cart-sidebar" id="cartSidebar">
+
+        <div class="cart-header">
+
+            <div>
+                <span>YOUR SHOPPING</span>
+                <h2>Your Cart</h2>
+            </div>
+
+            <button id="closeCart">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+        </div>
+
+
+        <div class="cart-items" id="cartItems">
+
+            <div class="empty-cart">
+
+                <i class="fa-solid fa-cart-shopping"></i>
+
+                <h3>Your cart is empty</h3>
+
+                <p>Add some products to get started.</p>
+
+            </div>
+
+        </div>
+
+
+        <div class="cart-footer">
+
+            <div class="cart-total">
+                <span>Total</span>
+                <strong id="cartTotal">$0.00</strong>
+            </div>
+
+            <button class="checkout-button" id="checkoutButton">
+                Proceed to Checkout
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-content">
+
+            <div class="footer-brand">
+
+                <a href="#" class="logo">
+                    COLOMONATI<span>.</span>
+                </a>
+
+                <p>
+                    Shop. Connect. Grow.
+                </p>
+
+            </div>
+
+            <div class="footer-links">
+
+                <a href="#home">Home</a>
+                <a href="#products">Products</a>
+                <a href="#about">About</a>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>
+                © 2026 COLOMONATI. All rights reserved.
+            </p>
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
